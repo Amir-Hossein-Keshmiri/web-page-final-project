@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Mail\RegisterNotification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
-class register_controller extends Controller
+class RegisterController extends Controller
 {
     public function show_register()
     {
@@ -17,24 +19,19 @@ class register_controller extends Controller
     public function register_to_profile(Request $request) {
         
         $request->validate([
-            'phone' => 'required|unique:users|digits:11',
+            'email' => 'required|email',
             'password' => 'required|min:6',
         ]);
 
         $user = User::create([
-            'phone' => $request->phone,
+            'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
-        // $this->send_sms($user->phone, "You register in successfully");
+        Mail::to($user->email)->send(new RegisterNotification($user));
 
         Auth::login($user);
 
         return redirect()->route('profile');
-    }
-
-    private function send_sms($phone, $message) {
-        
-        
     }
 }

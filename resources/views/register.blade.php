@@ -30,10 +30,10 @@
                 @csrf
             
                     <div class="input-group">
+
+                        <label for="email">Email Address</label>
                         
-                        <label for="phone">Phone Number</label>
-                        
-                        <input type="text" name="phone" placeholder="Enter your phone number"  required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
                     
                     </div>
             

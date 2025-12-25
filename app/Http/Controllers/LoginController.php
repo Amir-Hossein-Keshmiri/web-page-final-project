@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Mail\LoginNotification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
-class login_controller extends Controller
+class LoginController extends Controller
 {
     public function show_login()
     {
@@ -17,26 +19,22 @@ class login_controller extends Controller
     public function login_to_profile(Request $request) {
         
         $request->validate([
-            'phone' => 'required|digits:11',
+            'email' => 'required|email',
             'password' => 'required',
         ]);
 
-        $user = User::where('phone', $request->phone)->first();
+        $user = User::where('email', $request->email)->first();
 
         if ($user && Hash::check($request->password, $user->password)) {
             
             Auth::login($user);
 
-            // $this->send_sms($user->phone, "You login in successfully");
+            Mail::to($user->email)->send(new LoginNotification($user));
+
 
             return redirect()->route('profile');
         }
 
         return back()->with('error', 'Invalid phone or password');
-    }
-
-    private function send_sms($phone, $message) {
-        
-        
     }
 }

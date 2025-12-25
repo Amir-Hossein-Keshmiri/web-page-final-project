@@ -37,9 +37,9 @@
                         
                         <div class="info-row">
                         
-                            <label>Phone number</label>
+                            <label>Email</label>
 
-                            <input type="text" value="{{ $user->phone }}" disabled>
+                            <input type="text" value="{{ $user->email }}" disabled>
                         
                         </div>
                         

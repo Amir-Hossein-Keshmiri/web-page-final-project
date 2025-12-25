@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class profile_controller extends Controller
+class ProfileController extends Controller
 {
     public function show_profile()
     {

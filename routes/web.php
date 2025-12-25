@@ -14,28 +14,28 @@ Route::get('/', function ()
 
 // /login
 
-use App\Http\Controllers\login_controller;
+use App\Http\Controllers\LoginController;
 
-Route::get('/login', [login_controller::class, 'show_login'])->name('login');
-Route::post('/login', [login_controller::class, 'login_to_profile'])->name('login_to_profile');
+Route::get('/login', [LoginController::class, 'show_login'])->name('login');
+Route::post('/login', [LoginController::class, 'login_to_profile'])->name('login_to_profile');
 
 // ============================================================
 
 // /register
 
-use App\Http\Controllers\register_controller;
+use App\Http\Controllers\RegisterController;
 
-Route::get('/register', [register_controller::class, 'show_register'])->name('register');
-Route::post('/register', [register_controller::class, 'register_to_profile'])->name('register_to_profile');
+Route::get('/register', [RegisterController::class, 'show_register'])->name('register');
+Route::post('/register', [RegisterController::class, 'register_to_profile'])->name('register_to_profile');
 
 // ============================================================
 
 // /profile
 
-use App\Http\Controllers\profile_controller;
+use App\Http\Controllers\ProfileController;
 
-Route::get('/profile', [profile_controller::class, 'show_profile'])->name('profile');
-Route::get('/profile/add_balance', [profile_controller::class, 'redirect_to_payment']);
+Route::get('/profile', [ProfileController::class, 'show_profile'])->name('profile');
+Route::get('/profile/add_balance', [ProfileController::class, 'redirect_to_payment']);
 
 
 // ============================================================

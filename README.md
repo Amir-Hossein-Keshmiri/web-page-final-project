@@ -1,59 +1,175 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="screenshots/welcome_car.jpg" width="180" alt="ShopCar Logo">
 </p>
 
-## About Laravel
+<h1 align="center">ShopCar 🚗🛒</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>A modern, secure, and responsive authentication system built with Laravel</strong>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <a href="https://laravel.com" target="_blank"><img src="https://img.shields.io/badge/Laravel-10-red" alt="Laravel Version"></a>
+  <a href="https://www.php.net" target="_blank"><img src="https://img.shields.io/badge/PHP-8.3-blue" alt="PHP Version"></a>
+  <img src="https://img.shields.io/badge/Status-University_Project-success" alt="Project Status">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🌟 Project Overview
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**ShopCar** is a Laravel-based web application built as a **university project**.  
+Its main purpose is to demonstrate a **full authentication flow** with a modern, clean interface and email notifications.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The project covers:
 
-## Laravel Sponsors
+- Secure **user registration**
+- **Login system** with hashed passwords
+- **Profile management**
+- **Email notifications** on login and registration
+- Clean and responsive **Blade UI templates**
+- SQLite database for easy setup
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🚀 Features
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **User Registration:** Email + Password  
+- **Login & Logout** functionality  
+- **Profile Page:** Shows user's account info  
+- **Email Notifications:** Sent on registration and login  
+- **Password Hashing:** Security best practices  
+- **CSRF Protection:** Secure forms  
+- **Responsive UI:** Works on mobile and desktop  
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📸 Screenshots
 
-## Code of Conduct
+### Welcome Page
+![Welcome Page](screenshots/welcome.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Login Page
+![Login Page](screenshots/login.png)
 
-## Security Vulnerabilities
+### Register Page
+![Register Page](screenshots/register.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Profile Page
+![Profile Page](screenshots/profile.png)
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🛠️ Tech Stack
+
+- **Framework:** Laravel 10  
+- **Backend Language:** PHP 8.3  
+- **Frontend:** Blade + CSS  
+- **Database:** SQLite  
+- **Email:** Gmail SMTP / Log Driver for testing  
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/shopcar.git
+cd shopcar
+```
+
+2. Install dependencies:
+```bash
+composer install
+```
+
+3. Setup environment file:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Run migrations (this will reset database):
+```bash
+php artisan migrate:fresh
+```
+
+5. Start the development server:
+```bash
+php artisan serve
+```
+
+6. Access the app:
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 📧 Email Configuration
+
+**For testing (no real email sent):**
+```env
+MAIL_MAILER=log
+```
+
+**For real Gmail notifications:**
+```env
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=your_gmail@gmail.com
+MAIL_PASSWORD=your_app_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your_gmail@gmail.com
+MAIL_FROM_NAME="ShopCar"
+```
+
+> ⚠️ Make sure **2-step verification** is enabled on your Gmail account  
+> and you generate an **App Password** for Laravel to send emails.
+
+---
+
+## 🔒 Security Features
+
+- Passwords stored with **bcrypt hashing**
+- CSRF protection for all forms
+- Input validation for email and password
+- Unique email enforcement
+- No plain text credentials stored
+
+---
+
+## 🎓 Academic Notes
+
+This project demonstrates:
+
+- Laravel MVC architecture  
+- Authentication flow  
+- Email notifications integration  
+- Database migrations & Eloquent ORM  
+- Secure web application development
+
+---
+
+## 💡 Future Improvements
+
+- Add **password reset** functionality  
+- Add **email verification**  
+- Implement **user roles & permissions**  
+- Enhance **UI/UX with Tailwind CSS or Bootstrap**  
+- Add **multi-language support**
+
+---
+
+## 📜 License
+
+This project is open-source and **developed for educational purposes** under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+<p align="center">
+  Made with ❤️ using Laravel & PHP
+</p>
