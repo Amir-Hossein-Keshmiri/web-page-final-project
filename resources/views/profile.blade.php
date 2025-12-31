@@ -24,6 +24,11 @@
                 
                 <p>Manage your personal information, orders and balance.</p>
             
+                <form method="POST" action="{{ route('logout') }}" class="logout-form">
+                @csrf
+                    <button class="logout-btn">Logout</button>
+                </form>
+
             </div>
 
             <div class="profile-grid">

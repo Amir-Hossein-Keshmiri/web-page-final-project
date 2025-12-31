@@ -21,6 +21,27 @@ Route::post('/login', [LoginController::class, 'login_to_profile'])->name('login
 
 // ============================================================
 
+// /logout
+
+use Illuminate\Support\Facades\Auth;
+
+Route::post('/logout', function ()
+
+    {
+    
+        Auth::logout();
+    
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+
+        return redirect('/');
+
+    }
+
+)->name('logout');
+
+// ============================================================
+
 // /register
 
 use App\Http\Controllers\RegisterController;
@@ -34,8 +55,11 @@ Route::post('/register', [RegisterController::class, 'register_to_profile'])->na
 
 use App\Http\Controllers\ProfileController;
 
-Route::get('/profile', [ProfileController::class, 'show_profile'])->name('profile');
-Route::get('/profile/add_balance', [ProfileController::class, 'redirect_to_payment']);
+Route::middleware(['auth'])->group(function () {
 
+    Route::get('/profile', [ProfileController::class, 'show_profile'])->name('profile');
+    Route::get('/profile/add_balance', [ProfileController::class, 'redirect_to_payment']);
+
+});
 
 // ============================================================

@@ -32,8 +32,12 @@
                 <a href="#">Categories</a>
                 <a href="#">Best Sellers</a>
             </nav>
-            
-            <a href="/login" class="login-btn">Login</a>
+
+            @if(auth()->check())
+                <a href="/profile" class="login-btn">Profile</a>
+            @else
+                <a href="/login" class="login-btn">Login</a>
+            @endif
 
         </header>
 
