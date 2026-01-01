@@ -16,8 +16,6 @@
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 </p>
 
----
-
 ## 🌟 Project Overview
 
 **ShopCar** is a Laravel-based web application built as a **university project**.  
@@ -32,8 +30,6 @@ The project covers:
 - Clean and responsive **Blade UI templates**
 - SQLite database for easy setup
 
----
-
 ## 🚀 Features
 
 - **User Registration:** Email + Password  
@@ -43,8 +39,6 @@ The project covers:
 - **Password Hashing:** Security best practices  
 - **CSRF Protection:** Secure forms  
 - **Responsive UI:** Works on mobile and desktop  
-
----
 
 ## 📸 Screenshots
 
@@ -60,7 +54,11 @@ The project covers:
 ### Profile Page
 ![Profile Page](screenshots/profile.png)
 
----
+### Add Balance Page
+![Profile Page](screenshots/add_balance.png)
+
+### Add Balance Confirm Page
+![Profile Page](screenshots/add_balance_confirm.png)
 
 ## 🛠️ Tech Stack
 
@@ -69,8 +67,6 @@ The project covers:
 - **Frontend:** Blade + CSS  
 - **Database:** SQLite  
 - **Email:** Gmail SMTP / Log Driver for testing  
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -106,8 +102,6 @@ php artisan serve
 http://127.0.0.1:8000
 ```
 
----
-
 ## 📧 Email Configuration
 
 **For testing (no real email sent):**
@@ -130,8 +124,6 @@ MAIL_FROM_NAME="ShopCar"
 > ⚠️ Make sure **2-step verification** is enabled on your Gmail account  
 > and you generate an **App Password** for Laravel to send emails.
 
----
-
 ## 🔒 Security Features
 
 - Passwords stored with **bcrypt hashing**
@@ -139,8 +131,6 @@ MAIL_FROM_NAME="ShopCar"
 - Input validation for email and password
 - Unique email enforcement
 - No plain text credentials stored
-
----
 
 ## 🎓 Academic Notes
 
@@ -152,8 +142,6 @@ This project demonstrates:
 - Database migrations & Eloquent ORM  
 - Secure web application development
 
----
-
 ## 💡 Future Improvements
 
 - Add **password reset** functionality  
@@ -162,13 +150,9 @@ This project demonstrates:
 - Enhance **UI/UX with Tailwind CSS or Bootstrap**  
 - Add **multi-language support**
 
----
-
 ## 📜 License
 
 This project is open-source and **developed for educational purposes** under the [MIT License](https://opensource.org/licenses/MIT).
-
----
 
 <p align="center">
   Made with ❤️ using Laravel & PHP

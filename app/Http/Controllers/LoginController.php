@@ -31,7 +31,6 @@ class LoginController extends Controller
 
             Mail::to($user->email)->send(new LoginNotification($user));
 
-
             return redirect()->route('profile');
         }
 

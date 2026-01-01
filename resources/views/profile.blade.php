@@ -39,6 +39,18 @@
                     <div class="card">
                     
                         <h3>Account Details</h3>
+
+                        @if(session('success'))
+                            <p style="color:#2ecc71; text-align:center;">
+                                {{ session('success') }}
+                            </p>
+                        @endif
+
+                        @if(session('error'))
+                            <p style="color:#ff4d4f; text-align:center;">
+                                {{ session('error') }}
+                            </p>
+                        @endif
                         
                         <div class="info-row">
                         
@@ -65,10 +77,12 @@
                         <h3>Wallet Balance</h3>
                         
                         <div class="balance-display">
-                        
-                            <span class="amount">$125.00</span>
+
+                            <span class="amount">
+                                ${{ number_format($user->balance, 2) }}
+                            </span>
                             
-                            <a href="{{ url('/profile/add_balance') }}" class="primary-btn">Add Balance</a>
+                            <a href="{{ route('add_balance') }}" class="primary-btn">Add Balance</a>
                         
                         </div>
                     
@@ -82,17 +96,6 @@
                     <div class="card">
                         
                         <h3>Your Orders</h3>
-
-                        <!-- Empty Orders Message -->
-                        <!-- 
-                        <div class="no-orders">
-                            
-                            <p>No orders found.</p>
-                            
-                            <span>Start exploring and place your first order!</span>
-                        
-                        </div>
-                        -->
 
                         <!-- Orders List -->
                         <div class="orders-list">

@@ -14,8 +14,37 @@ class ProfileController extends Controller
         return view('profile', compact('user'));
     }
 
-    public function redirect_to_payment() {
+    public function show_add_balance() {
         
-        return redirect('https://google.com');
+        return view('add_balance');
+    }
+
+    public function show_add_balance_confirm(Request $request)
+    {
+        $amount = $request->amount;
+
+        return view('add_balance_confirm', compact('amount'));
+    }
+
+    public function add_balance_result(Request $request)
+    {
+        $status = $request->status;
+        $amount = $request->amount;
+        
+        $user = Auth::user();
+
+        if ($status === 'success')
+        {
+            $user->balance += $amount;
+            $user->save();
+
+            return redirect()
+                ->route('profile')
+                ->with('success', 'Balance increased successfully!');
+        }
+
+        return redirect()
+            ->route('profile')
+            ->with('error', 'Balance increase failed.');
     }
 }

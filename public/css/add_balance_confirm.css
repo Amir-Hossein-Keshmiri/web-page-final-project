@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0c0f15;
+    color: #eee;
+    padding: 40px 20px;
+}
+
+.profile-wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h2 {
+    font-size: 34px;
+    color: #31a8ff;
+    margin-bottom: 8px;
+}
+
+.profile-header p {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.card {
+    background: #151920;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(49, 168, 255, .15);
+}
+
+.amount-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #eee;
+}
+
+.confirm-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.confirm-buttons form {
+    flex: 1;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.success-btn {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.success-btn:hover {
+    background: #27ae60;
+    box-shadow: 0 0 12px rgba(46, 204, 113, 0.6);
+}
+
+.fail-btn {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.fail-btn:hover {
+    background: #c0392b;
+    box-shadow: 0 0 12px rgba(231, 76, 60, 0.6);
+}

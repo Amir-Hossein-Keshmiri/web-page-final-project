@@ -55,11 +55,22 @@ Route::post('/register', [RegisterController::class, 'register_to_profile'])->na
 
 use App\Http\Controllers\ProfileController;
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function () 
 
-    Route::get('/profile', [ProfileController::class, 'show_profile'])->name('profile');
-    Route::get('/profile/add_balance', [ProfileController::class, 'redirect_to_payment']);
+    {
 
-});
+        Route::get('/profile', [ProfileController::class, 'show_profile'])
+            ->name('profile');
+        
+        Route::get('/profile/add_balance', [ProfileController::class, 'show_add_balance'])
+            ->name('add_balance');
+
+        Route::post('/profile/add_balance/confirm', [ProfileController::class, 'show_add_balance_confirm'])
+            ->name('add_balance_confirm');
+
+        Route::post('/profile/add_balance/result', [ProfileController::class, 'add_balance_result'])
+            ->name('add_balance_result');
+    }
+);
 
 // ============================================================

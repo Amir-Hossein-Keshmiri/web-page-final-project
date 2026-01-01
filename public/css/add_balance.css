@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0c0f15;
+    color: #eee;
+    padding: 40px 20px;
+}
+
+.profile-wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h2 {
+    font-size: 34px;
+    color: #31a8ff;
+    margin-bottom: 8px;
+}
+
+.profile-header p {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.card {
+    background: #151920;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 0 24px rgba(49, 168, 255, .15);
+}
+
+.info-row {
+    margin-bottom: 20px;
+}
+
+.info-row label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.info-row input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #222831;
+    border: none;
+    color: #eee;
+}
+
+.primary-btn {
+    background: #31a8ff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #1b8dd8;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px;
+}
