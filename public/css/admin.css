@@ -11,37 +11,26 @@ body {
     padding: 18px 20px;
 }
 
-.profile-wrapper {
+.admin-wrapper {
     max-width: 1100px;
     margin: auto;
 }
 
-.profile-header {
+.admin-header {
+    position: relative;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.profile-header h2 {
+.admin-header h2 {
     font-size: 34px;
     color: #31a8ff;
     margin-bottom: 8px;
 }
 
-.profile-header p {
+.admin-header p {
     color: #ccc;
     font-size: 15px;
-}
-
-.profile-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 30px;
-}
-
-.profile-header {
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .logout-form {
@@ -65,6 +54,12 @@ body {
     background: #ff4d4f;
     color: #fff;
     box-shadow: 0 0 12px rgba(255,77,79,.6);
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 30px;
 }
 
 .card {
@@ -111,16 +106,10 @@ body {
     text-decoration: underline;
 }
 
-.balance-display {
+.action-buttons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.amount {
-    font-size: 22px;
-    color: #31a8ff;
-    font-weight: bold;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .primary-btn {
@@ -132,50 +121,31 @@ body {
     font-weight: bold;
     transition: .3s;
 }
+
 .primary-btn:hover {
     background: #1b8dd8;
 }
 
-.no-orders {
-    background: #222831;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    color: #ccc;
-    margin-bottom: 15px;
-}
-
-.no-orders p {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.no-orders span {
-    font-size: 14px;
-    color: #777;
-}
-
-.orders-list {
+.activity-list {
     max-height: 260px;
     overflow-y: auto;
     padding-right: 6px;
 }
 
-.orders-list::-webkit-scrollbar {
+.activity-list::-webkit-scrollbar {
     width: 7px;
 }
 
-.orders-list::-webkit-scrollbar-thumb {
+.activity-list::-webkit-scrollbar-thumb {
     background: #31a8ff;
     border-radius: 10px;
 }
 
-.orders-list::-webkit-scrollbar-track {
+.activity-list::-webkit-scrollbar-track {
     background: #1a1f27;
 }
 
-.order-item {
+.activity-item {
     background: #222831;
     padding: 14px;
     border-radius: 12px;
@@ -185,34 +155,13 @@ body {
     align-items: center;
 }
 
-.model {
+.activity-item p {
     font-weight: 600;
 }
 
-.order-date {
+.activity-date {
     font-size: 12px;
     color: #aaa;
-}
-
-.price {
-    color: #31a8ff;
-    font-weight: 600;
-}
-
-.status {
-    padding: 6px 10px;
-    border-radius: 8px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.delivered {
-    background: #2a9d8f;
-}
-
-.pending {
-    background: #e9c46a;
-    color: #000;
 }
 
 .back-home {
@@ -229,7 +178,7 @@ body {
 }
 
 @media(max-width: 900px) {
-    .profile-grid {
+    .admin-grid {
         grid-template-columns: 1fr;
     }
 }

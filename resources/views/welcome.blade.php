@@ -34,7 +34,11 @@
             </nav>
 
             @if(auth()->check())
-                <a href="/profile" class="login-btn">Profile</a>
+                @if(auth()->user()->email === 'admin@gmail.com')
+                    <a href="/admin" class="login-btn">Profile</a>
+                @else
+                    <a href="/profile" class="login-btn">Profile</a>
+                @endif
             @else
                 <a href="/login" class="login-btn">Login</a>
             @endif

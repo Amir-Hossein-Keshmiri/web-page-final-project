@@ -74,3 +74,11 @@ Route::middleware(['auth'])->group(function ()
 );
 
 // ============================================================
+
+// /admin
+
+use App\Http\Controllers\AdminController;
+
+Route::get('/admin', [AdminController::class, 'show_profile_admin']);
+
+// ============================================================

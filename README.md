@@ -54,6 +54,9 @@ The project covers:
 ### Profile Page
 ![Profile Page](screenshots/profile.png)
 
+### Admin Page
+![Profile Page](screenshots/admin.png)
+
 ### Add Balance Page
 ![Profile Page](screenshots/add_balance.png)
 
