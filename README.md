@@ -45,6 +45,12 @@ The project covers:
 ### Welcome Page
 ![Welcome Page](screenshots/welcome.png)
 
+### Welcome Page
+![Welcome Page](screenshots/welcome2.png)
+
+### Welcome Page
+![Welcome Page](screenshots/welcome3.png)
+
 ### Login Page
 ![Login Page](screenshots/login.png)
 

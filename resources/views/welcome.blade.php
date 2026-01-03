@@ -61,247 +61,71 @@
 
         <section class="products">
             
-            <h2>⚡ Featured Products</h2>
+            <h2>⚡ Car Brands</h2>
 
             <div class="product-grid">
 
                 <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
 
-                    <img src="{{ asset('img/cars/audi/audi_1.jpg') }}" alt="Audi R8">
+                    <img src="{{ asset('img/logo/mercedes.jpeg') }}" alt="mercedes logo">
                 
-                    <h3>Audi R8</h3>
-                
-                    <div class="rating">⭐ 4.9</div>
-                
-                    <p class="price">$150,000 <span class="old-price">$170,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Mercedes</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/bmw.jpeg') }}" alt="bmw logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/audi/audi_2.jpg') }}" alt="Audi Q7">
-                
-                    <h3>Audi Q7</h3>
-                
-                    <div class="rating">⭐ 4.7</div>
-                
-                    <p class="price">$70,000 <span class="old-price">$85,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>BMW</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/audi.jpeg') }}" alt="audi logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/audi/audi_3.jpg') }}" alt="Audi Q7">
-                
-                    <h3>Audi Q7</h3>
-                
-                    <div class="rating">⭐ 4.7</div>
-                
-                    <p class="price">$70,000 <span class="old-price">$85,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Audi</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/lamborghini.jpeg') }}" alt="lamborghini logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/bmw/bmw_1.jpg') }}" alt="BMW i8">
-                
-                    <h3>BMW i8</h3>
-                
-                    <div class="rating">⭐ 4.8</div>
-                
-                    <p class="price">$140,000 <span class="old-price">$160,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Lamborgini</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/ferrari.jpeg') }}" alt="ferrari logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/bmw/bmw_2.jpg') }}" alt="BMW X5">
-                
-                    <h3>BMW X5</h3>
-                
-                    <div class="rating">⭐ 4.6</div>
-                
-                    <p class="price">$65,000 <span class="old-price">$78,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Ferrari</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/porsche.jpeg') }}" alt="porsche logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/bmw/bmw_3.jpg') }}" alt="BMW X5">
-                
-                    <h3>BMW X5</h3>
-                
-                    <div class="rating">⭐ 4.6</div>
-                
-                    <p class="price">$65,000 <span class="old-price">$78,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Porsche</h3>
             
                 </div>
 
                 <div class="product-card">
+
+                    <img src="{{ asset('img/logo/volkswagen.jpeg') }}" alt="volkswagen logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/ferrari/ferarri_1.jpg') }}" alt="Ferrari F8">
-                
-                    <h3>Ferrari F8</h3>
-                
-                    <div class="rating">⭐ 5.0</div>
-                
-                    <p class="price">$280,000 <span class="old-price">$300,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Volkswagen</h3>
             
                 </div>
 
                 <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/ferrari/ferarri_2.jpg') }}" alt="Ferrari SF90">
-                
-                    <h3>Ferrari SF90</h3>
-                
-                    <div class="rating">⭐ 4.9</div>
-                
-                    <p class="price">$350,000 <span class="old-price">$380,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
 
-                <div class="product-card">
+                    <img src="{{ asset('img/logo/bentley.jpeg') }}" alt="bentley logo">
                 
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/ferrari/ferarri_3.jpg') }}" alt="Ferrari F8">
-                
-                    <h3>Ferrari F8</h3>
-                
-                    <div class="rating">⭐ 5.0</div>
-                
-                    <p class="price">$280,000 <span class="old-price">$300,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/lamborghini/lamborghini_1.jpg') }}" alt="Lamborghini Huracan">
-                
-                    <h3>Lamborghini Huracan</h3>
-                
-                    <div class="rating">⭐ 4.8</div>
-                
-                    <p class="price">$250,000 <span class="old-price">$270,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/lamborghini/lamborghini_2.jpg') }}" alt="Lamborghini Huracan">
-                
-                    <h3>Lamborghini Huracan</h3>
-                
-                    <div class="rating">⭐ 4.8</div>
-                
-                    <p class="price">$250,000 <span class="old-price">$270,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/lamborghini/lamborghini_3.jpg') }}" alt="Lamborghini Huracan">
-                
-                    <h3>Lamborghini Huracan</h3>
-                
-                    <div class="rating">⭐ 4.8</div>
-                
-                    <p class="price">$250,000 <span class="old-price">$270,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/mercedes/mercedes_1.jpg') }}" alt="Mercedes S-Class">
-                
-                    <h3>Mercedes S-Class</h3>
-                
-                    <div class="rating">⭐ 4.7</div>
-                
-                    <p class="price">$110,000 <span class="old-price">$130,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/mercedes/mercedes_2.jpg') }}" alt="Mercedes S-Class">
-                
-                    <h3>Mercedes S-Class</h3>
-                
-                    <div class="rating">⭐ 4.7</div>
-                
-                    <p class="price">$110,000 <span class="old-price">$130,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
-            
-                </div>
-
-                <div class="product-card">
-                
-                    <span class="badge-sale">SALE</span>
-                
-                    <img src="{{ asset('img/cars/mercedes/mercedes_3.jpg') }}" alt="Mercedes S-Class">
-                
-                    <h3>Mercedes S-Class</h3>
-                
-                    <div class="rating">⭐ 4.7</div>
-                
-                    <p class="price">$110,000 <span class="old-price">$130,000</span></p>
-                
-                    <button class="add-cart">Add to Cart</button>
+                    <h3>Bentley</h3>
             
                 </div>
 
@@ -323,7 +147,7 @@
 
         <footer class="footer">
             
-            <p>© 2025 ShopCar. All rights reserved.</p>
+            <p>© 2026 ShopCar. All rights reserved.</p>
         
         </footer>
 

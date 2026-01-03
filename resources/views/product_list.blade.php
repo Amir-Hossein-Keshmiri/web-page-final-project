@@ -6,7 +6,7 @@
     
         <meta charset="UTF-8">
         
-        <title>User List | Admin</title>
+        <title>Product List | Admin</title>
         
         <link rel="stylesheet" href="/css/admin.css">
         
@@ -20,7 +20,7 @@
 
             <div class="admin-header">
         
-                <h2>User Management</h2>
+                <h2>Product Management</h2>
             
                 <p>View and manage product</p>
         
