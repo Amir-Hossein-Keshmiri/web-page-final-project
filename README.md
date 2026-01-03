@@ -54,14 +54,20 @@ The project covers:
 ### Profile Page
 ![Profile Page](screenshots/profile.png)
 
-### Admin Page
-![Profile Page](screenshots/admin.png)
-
 ### Add Balance Page
 ![Profile Page](screenshots/add_balance.png)
 
 ### Add Balance Confirm Page
 ![Profile Page](screenshots/add_balance_confirm.png)
+
+### Admin Page
+![Profile Page](screenshots/admin.png)
+
+### Users List Page
+![Profile Page](screenshots/users_list.png)
+
+### Prpduct List Page
+![Profile Page](screenshots/product_list.png)
 
 ## 🛠️ Tech Stack
 

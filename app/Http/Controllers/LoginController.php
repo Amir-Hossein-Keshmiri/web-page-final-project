@@ -48,7 +48,7 @@ class LoginController extends Controller
             return redirect()->route('profile');
         }
 
-        return back()->with('error', 'Invalid phone or password');
+        return back()->with('error', 'Invalid email or password');
     }
 
     public function logout(Request $request)

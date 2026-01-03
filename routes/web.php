@@ -79,6 +79,21 @@ Route::middleware(['auth'])->group(function ()
 
 use App\Http\Controllers\AdminController;
 
-Route::get('/admin', [AdminController::class, 'show_profile_admin']);
+Route::middleware(['auth'])->group(function () 
+
+    {
+        
+        Route::get('/admin', [AdminController::class, 'show_profile_admin'])
+            ->name('admin');
+
+        Route::get('/admin/users_list', [AdminController::class, 'show_users_list'])
+            ->name('users_list');
+        
+        Route::delete('/admin/users/{id}', [AdminController::class, 'delete_user']);
+
+        Route::get('/admin/product_list', [AdminController::class, 'show_product_list'])
+            ->name('product_list');
+    }
+);
 
 // ============================================================

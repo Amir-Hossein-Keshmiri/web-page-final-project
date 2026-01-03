@@ -1,0 +1,73 @@
+.users-table {
+    margin-top: 20px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 80px 1fr 140px;
+    align-items: center;
+    padding: 14px;
+    border-radius: 12px;
+    background: #1a1f27;
+    color: #31a8ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table-body {
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.table-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+    background: #31a8ff;
+    border-radius: 10px;
+}
+
+.table-body::-webkit-scrollbar-track {
+    background: #1a1f27;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 140px;
+    align-items: center;
+    padding: 14px;
+    border-radius: 12px;
+    background: #222831;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.table-row:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 12px rgba(49,168,255,.25);
+}
+
+.delete-btn {
+    background: transparent;
+    border: 1px solid #ff4d4f;
+    color: #ff4d4f;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.delete-btn:hover {
+    background: #ff4d4f;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,77,79,.6);
+}
+
+.empty-text {
+    margin-top: 20px;
+    color: #aaa;
+    text-align: center;
+}

@@ -66,9 +66,9 @@
                     
                         <div class="action-buttons">
                         
-                            <a href="/admin/users" class="primary-btn">User List</a>
+                            <a href="/admin/users_list" class="primary-btn">User List</a>
                             
-                            <a href="/admin/products" class="primary-btn">Product List</a>
+                            <a href="/admin/product_list" class="primary-btn">Product List</a>
                     
                         </div>
                 
